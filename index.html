@@ -4,14 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Seminaire DISC</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -23,25 +24,522 @@
 		</script>
 	</head>
 	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
-
+    <div class="reveal">
+      <div class="slides">
+<section>
+    <h3>Seminaire DISC:</h3>
+    <h3>Neuroevolution</h3>
+    <p><small>
+        Dennis Wilson
+        <br/>
+        2019-11-21
+    </small></p>
+</section>
+<section>
+    <section>
+        <h3>Outline</h3>
+        <ul>
+            <li>Me</li>
+            <li>Open Source</li>
+            <li>Neuroevolution</li>
+            <ul>
+                <li>Why evolution?</li>
+                <li>Why neurons?</li>
+            </ul>
+            <li>Neuromodulation</li>
+            <li>Developmental Neural Networks</li>
+        </ul>
+    </section>
+    <section>
+        <h6>Background</h6>
+        <img data-src="img/isae/background.png" width="80%" height="auto">
+    </section>
+    <section>
+        <h6>Research Interests</h6>
+        <img data-src="img/isae/interest.png" width="50%" height="auto">
+    </section>
+    <section>
+        <h6>Open source</h6>
+        <div class="fragment">
+            <img data-src="img/gimp.jpg" width="50%" height="auto">
+        </div>
+    </section>
+    <section>
+        <img data-src="img/julia.png" width="50%" height="auto">
+    </section>
+</section>
+<section>
+    <section>
+        <h6>Research Interests</h6>
+        <img data-src="img/isae/interest.png" width="50%" height="auto">
+    </section>
+    <section>
+        <h6>Neuroevolution</h6>
+        <table class="stretch" border="0">
+            <tr>
+                <td>
+                    <img data-src="img/background/cellular_encoding.png" width="100%" height="auto">
+                    <p class="source">
+                        Gruau, Frederic, and Darrell Whitley. "Adding learning
+                        to the cellular development of neural networks:
+                        Evolution and the Baldwin effect." Evolutionary
+                        computation 1.3 (1993): 213-233.
+                    </p>
+                </td>
+                <td valign="center">
+                    <img data-src="img/background/barr.png" width="100%" height="auto">
+                    <p class="source">
+                        Fleischer, Kurt, and Alan H. Barr. "A simulation testbed
+                        for the study of multicellular development: The multiple
+                        mechanisms of morphogenesis." 1994
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h6>Neuroevolution</h6>
+        <table class="stretch" border="0">
+            <tr>
+                <td>
+                    <img data-src="img/background/neat.png" width="100%" height="auto">
+                    <p class="source">
+                        Stanley, Kenneth O., and Risto Miikkulainen. "Evolving
+                        neural networks through augmenting topologies."
+                        Evolutionary computation 10.2 (2002): 99-127
+                    </p>
+                </td>
+                <td>
+                    <img data-src="img/background/cgpbrain-page1.png" width="50%" height="auto">
+                    <p class="source">
+                        Miller, Julian F., Dennis G. Wilson, and Sylvain
+                        Cussat-Blanc. "Evolving Developmental Programs That
+                        Build Neural Networks for Solving Multiple Problems."
+                        Genetic Programming Theory and Practice XVI. Springer,
+                        Cham, 2019. 137-178.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h6>Deep Neuroevolution</h6>
+        <img data-src="img/openai.png" width="100%" height="auto">
+    </section>
+    <section>
+        <img data-src="img/uber.png" width="100%" height="auto">
+    </section>
+    <section>
+        <img data-src="img/oreilly.png" width="100%" height="auto">
+    </section>
+    <section>
+        <img data-src="img/quanta.png" width="100%" height="auto">
+    </section>
+    <section>
+        <h6>Neuroevolution</h6>
+        <ul>
+        <li><b>Direct evolution of neural network weights</b><br/>
+            Evolutionary Strategies</p></li>
+        <li><b>Direct evolution of neural network weights and structure</b><br/>
+            NEAT, CGPANN</li>
+        <li><b>Indirect evolution of neural network weights</b><br/>
+            HyperNEAT, Deep Neuroevolution</li>
+        <li><b>Evolution of learning in neural networks</b><br/>
+            Cellular Encoding, Developmental Neural Networks, Deep Neuromodulation</li>
+        </ul>
+    </section>
+</section>
+<section>
+    <!-- <section data-background-color="#000"> -->
+    <section data-background-video="video/boxing.mp4" data-background-video-loop=true>
+        <h3>Evolutionary Computation</h3>
+    </section>
+    <section>
+        <h6>Evolutionary Algorithms</h6>
+        <img data-src="img/background/AlgoG.png" width="60%" height="auto">
+        <br />
+        $1+\lambda$ ES, CMA-ES, Genetic Algorithm
+    </section>
+    <section>
+        <h6>Evolution for optimization</h6>
+        <video height="600px" autoplay loop controls>
+            <source src="video/gradient_gap_composite.mp4" type="video/mp4">
+        </video>
+        <p class="source">https://eng.uber.com/deep-neuroevolution/</p>
+    </section>
+    <section>
+        <h6>Search for novel behavior</h6>
+        <video height="400px" autoplay loop controls>
+            <source src="video/mapelites.mp4" type="video/mp4">
+            <!-- <source src="video/mapelites2.webm" type="video/webm"> -->
+        </video>
+        <p class="source">
+            Cully, Antoine, et al. "Robots that can adapt like animals." Nature 521.7553 (2015): 503.
+        </p>
+    </section>
+    <section>
+        <h6>Cartesian Genetic Programming</h6>
+        <video height="400px" autoplay loop controls>
+            <source src="video/centipede.mp4" type="video/mp4">
+        </video>
+        <img class="plain" src="img/cgp/centipede_graph.png" height="400px">
+        <p class="source">
+            Wilson, Dennis G., et al. "Evolving simple programs for playing Atari games."<br />Proceedings of the Genetic and Evolutionary Computation Conference. ACM, 2018.
+        </p>
+    </section>
+    <section>
+        <h6>Cartesian Genetic Programming</h6>
+        <img data-src="img/cgp/fp_cgp.png" width="90%" height="auto">
+        <p class="source">
+            Wilson, Dennis G., et al. "Positional Cartesian Genetic Programming." arXiv preprint arXiv:1810.04119 (2018).
+        </p>
+    </section>
+    <section>
+        <h4>CGP for Atari playing</h4>
+        <img class="plain" src="img/cgp/scheme.png">
+    </section>
+    <section>
+        <h4>Comparison</h4>
+        <small>
+        <table>
+            <thead>
+                <tr>
+                    <th>Game</th> <th>Human</th> <th>Double</th>
+                    <th>DQN</th> <th>Prioritized</th> <th>A3C:FF</th>
+                    <th>HyperNEAT</th> <th>CGP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Asteroids</td> <td>13157</td> <td>1193.2</td>
+                    <td>2035.4</td> <td>1654</td> <td>4474.5</td>
+                    <td>1694</td>
+                    <td>9412</td>
+                </tr>
+                <tr>
+                    <td>Defender</td> <td></td> <td>27510</td>
+                    <td>33996</td> <td>21093.5</td> <td>56533</td>
+                    <td>14620</td>
+                    <td>993010</td>
+                </tr>
+                <tr>
+                    <td>Gravitar</td> <td>2672</td> <td>200.5</td>
+                    <td>297</td> <td>218</td> <td>303.5</td>
+                    <td>370</td>
+                    <td>2350</td>
+                </tr>
+                <tr>
+                    <td>JamesBond</td> <td>406.7</td> <td>573</td>
+                    <td>835.5</td> <td>3511.5</td> <td>541</td>
+                    <td>5660</td> <td>6130</td>
+                </tr>
+                <tr>
+                    <td>Kangaroo</td> <td>3035</td> <td>11204</td>
+                    <td>10334</td> <td>10241</td> <td>94</td>
+                    <td>800</td> <td>1400</td>
+                </tr>
+                <tr>
+                    <td>Krull</td> <td>2395</td> <td>6796.1</td>
+                    <td>8051.6</td> <td>7406.5</td> <td>5560</td>
+                    <td>12601.4</td> <td>9086.8</td>
+                </tr>
+                <tr>
+                    <td>Ms. Pacman</td> <td>15693</td> <td>1241.3</td>
+                    <td>2250.6</td> <td>1824.6</td> <td>653.7</td>
+                    <td>3408</td> <td>2568</td>
+                </tr>
+                <tr>
+                    <td>Private Eye</td> <td>69571</td> <td>-575.5</td>
+                    <td>292.6</td> <td>179</td> <td>206.9</td>
+                    <td>10747.4</td> <td>12702.2</td>
+                </tr>
+                <tr>
+                    <td>Skiing</td> <td></td> <td>-11490.4</td>
+                    <td>-11928</td> <td>-10852.8</td> <td>-10911.1</td>
+                    <td>-7983.6</td> <td>-9011</td>
+                </tr>
+                <tr>
+                    <td>Solaris</td> <td></td> <td>810</td>
+                    <td>1768.4</td> <td>2238.2</td> <td>1956</td>
+                    <td>160</td> <td>8324</td>
+                </tr>
+                <tr>
+                    <td>YarsRevenge</td> <td></td> <td>6270.6</td>
+                    <td>25976.5</td> <td>5965.1</td> <td>7157.5</td>
+                    <td>24096.4</td> <td>28838.2</td>
+                </tr>
+            </tbody>
+        </table>
+        </small>
+    </section>
+    <section>
+        <h3>My work in evolutionary computation</h3>
+        <ul>
+            <li><b>Population dynamics in evolutionary search</b><br/>
+                Island model $1+\lambda$ ES, CMA-ES</li>
+            <li><b>Genome representation and evolutionary operators for Genetic Programming</b><br/>
+                Gene Regulatory Networks, Positional CGP</li>
+            <li><b>Application of Genetic Programming</b><br/>
+                Wind farm layouts, electric crisis response, Atari games, learning in ANNs</li>
+        </ul>
+    </section>
+</section>
+<section>
+    <section data-background-video="video/neurons.mp4" data-background-video-loop=true>
+        <h3 style="color:#fff;">The Brain as Inspiration</h3>
+    </section>
+    <section>
+        <h6>Why neurons?</h6>
+        <table>
+            <tr>
+                <td>
+                    <img data-src="img/brain_clipart.png" width="50%" height="auto">
+                </td>
+                <td>
+                    <ul>
+                        <li class="fragment">Humans are intelligent</li>
+                        <li class="fragment">Humans have neurons</li>
+                        <li class="fragment">Computers should have neurons</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h6>Why <b>do</b> humans have neurons?</h6>
+        <video height="500px" autoplay loop controls>
+            <source src="video/plants.mp4" type="video/mp4">
+        </video>
+        <p class="source">Pollan, Michael. "The intelligent plant." New Yorker (2013): 93.</p>
+    </section>
+    <section>
+        <h6>Adaptive immunity</h6>
+        <img data-src="img/immune.png" width="50%" height="auto">
+        <p class="source">
+            Sun, Joseph C., Sophie Ugolini, and Eric Vivier. "Immunological memory within the innate immune system." The EMBO journal 33.12 (2014): 1295-1303.
+        </p>
+    </section>
+    <section>
+        <h6>The brain</h6>
+        <ul>
+            <li>Memory, cognition, meta-cognition, abstraction, imagination, planning, adaptation</li>
+            <li>Energy efficient<br/>human brain: 2,000 kJ, deep NLP: 1,650,000 kJ</li>
+            <li>Sample efficient</li>
+            <li>Highly plastic</li>
+        </ul>
+        <br />
+        <br />
+        Neurons are the best form of phenotypic plasticity that biological evolution has found to date, enabling <b>adaptation to unknown scenarios</b> during a lifetime.
+    </section>
+    <section>
+        <h6>Strucural Plasticity</h6>
+        <img class="plain" src="img/axons/eyes_diagram.png" width="50%" height="auto">
+        <p class="source">
+            Erskine, L., & Herrera, E. (2007). The retinal ganglion cell axon's
+            journey: insights into<br />molecular mechanisms of axon guidance.
+            Developmental biology, 308(1), 1-14.
+        </p>
+    </section>
+    <section>
+        <h6>AGRN Axon guidance</h6>
+        <img class="plain" src="img/axons/axons_11.gif" width="60%" height="auto">
+    </section>
+    <section>
+        <h6>Visual Input Disruption</h6>
+        <img data-src="img/connections/axons_11_spikes-page1.png" width="49%" height="auto">
+        <img data-src="img/connections/axons_01_spikes-page1.png" width="49%" height="auto">
+        <p class="source">
+            Wilson, D et al. A gene regulatory network model for axon guidance.
+            <br />
+            Workshop on Developmental Neural Networks, PPSN 2018.
+        </p>
+    </section>
+</section>
+<section>
+    <section data-background-video="video/simulation.mp4" data-background-video-loop=true>
+        <h3 style="color:#fff;">Evolving Learning Methods
+        <div class="video-source">&copy; DigiCortex</div></h3>
+    </section>
+    <section>
+        <h6>Stochastic Gradient Descent</h6>
+        <img data-src="video/sgd.gif" width="90%" height="auto">
+        <br />
+        SGD(<span style="color: #FF7F00">$\eta$</span>, <span style="color:
+        #6A3D9A">$\alpha$</span>)
+    </section>
+    <section>
+        <h6>Adaptive Moment Estimation (Adam)</h6>
+        <img data-src="video/adam.gif" width="90%" height="auto">
+        <br />
+        Adam(<span style="color: #FF7F00">$\eta$</span>, <span style="color:
+        #6A3D9A">$\beta_1$</span>, <span style="color: #6A3D9A">$\beta_2$</span>,
+        <span style="color: #33A02C">$\epsilon$</span>)
+    </section>
+    <section>
+        <h6>Learning Parameters</h6>
+        <table>
+            <tr>
+                <td>Inputs</td>
+                <td>Output (SGD) &nbsp; &nbsp;</td>
+                <td>Output (Adam)</td>
+            </tr>
+            <tr>
+                <td>$\mu_{\theta}$</td>
+                <td>$\eta$</td>
+                <td>$\eta$</td>
+            </tr>
+            <tr>
+                <td>$\sigma_{\theta}$</td>
+                <td>$\alpha$</td>
+                <td>$\beta_1$</td>
+            </tr>
+            <tr>
+                <td>$\mu_{\nabla Q}$</td>
+                <td></td>
+                <td>$\beta_2$</td>
+            </tr>
+            <tr>
+                <td>$\sigma_{\nabla Q}$</td>
+                <td></td>
+                <td>$\epsilon$</td>
+            </tr>
+            <tr>
+                <td>layer location</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>layer size</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h6>Neuromodulation</h6>
+        <img data-src="img/neuromod/neuromod_scheme.png" width="80%" height="auto">
+        <p class="source">
+            Wilson, Dennis G., et al. "Neuromodulated Learning in Deep Neural Networks."<br/>arXiv preprint arXiv:1812.03365 (2018).
+        </p>
+    </section>
+    <section>
+        <h6>Neural Network Models</h6>
+        <img data-src="img/background/vgg16.png" width="50%" height="auto">
+        <p class="source">
+            Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional
+            networks for large-scale image recognition." ICLR (2015).
+        </p>
+        <small>
+        <table style="width: 200px;">
+            <tr>
+                <td>m0</td>
+                <td>small</td>
+            </tr>
+            <tr>
+                <td>m1</td>
+                <td>medium</td>
+            </tr>
+            <tr>
+                <td>m2</td>
+                <td>large</td>
+            </tr>
+        </table>
+        </small>
+    </section>
+    <section>
+        <h6>Image classification: CIFAR-10</h6>
+        <img data-src="img/neuromod/cifar10_train-page1.png" width="80%" height="auto">
+        <br />
+        <p class="fragment">
+        <img data-src="img/neuromod/cifar10_test-page1.png" width="80%" height="auto">
+        </p>
+    </section>
+    <section>
+        <h6>Image classification: CIFAR-100</h6>
+        <img data-src="img/neuromod/cifar100_train-page1.png" width="80%" height="auto">
+        <br />
+        <p class="fragment">
+        <img data-src="img/neuromod/cifar100_test-page1.png" width="80%" height="auto">
+        </p>
+    </section>
+    <section>
+        <h6>AGRN Outputs</h6>
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_lr-page1.png" width="40%" height="auto">
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_beta1-page1.png" width="40%" height="auto">
+        <br />
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_beta2-page1.png" width="40%" height="auto">
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_epsilon-page1.png" width="40%" height="auto">
+    </section>
+    <section>
+        Evolution finds local and dynamic neuromodulation strategies which
+        improve on existing learning methods.
+    </section>
+</section>
+<section>
+    <section data-background-video="video/axons.mp4" data-background-video-loop=true>
+        <h3 style="color:#fff;">Evolving Neural Connectivity
+            <div class="video-source">&copy; Alvéole</div></h3>
+    </section>
+    <section>
+        <h6>CGP brain</h6>
+        <img class="plain" src="img/cgpbrain.png" width="50%" height="auto">
+        <p class="source">Miller, Julian F., Dennis G. Wilson, and Sylvain Cussat-Blanc. "Evolving developmental programs that build neural networks for solving multiple problems." Genetic Programming Theory and Practice XVI. Springer, Cham, 2019. 137-178.</p>
+    </section>
+    <section>
+        <h6>Neuron Development</h6>
+        <img class="plain" src="img/developing-brain.png" width="70%" height="auto">
+    </section>
+    <section>
+        <h6>Data classification</h6>
+        <img class="plain" src="img/cgpbraingraph_run_0_prob0.png" width="12%" height="auto">
+        <img class="plain" src="img/cgpbraingraph_run_0_prob1.png" width="12%" height="auto">
+        <img class="plain" src="img/cgpbraingraph_run_0_prob2.png" width="12%" height="auto">
+    </section>
+    <section>
+        <h6>Reinforcement learning</h6>
+        <img class="plain" src="img/cgpbrain_solution.png" width="70%" height="auto">
+    </section>
+    <section>
+        <img class="plain" src="img/devonn.png" width="100%" height="auto">
+    </section>
+    <section>
+        <h6>Lifelong learning</h6>
+        <img class="plain" src="img/lifelong.png" width="60%" height="auto">
+        <p class="source">Parisi, German I., et al. "Continual lifelong learning with neural<br/>networks: A review." Neural Networks (2019).</p>
+    </section>
+    <section>
+        <h6>Neurogenesis</h6>
+        <img class="plain" src="img/neurogenesis.png" width="60%" height="auto">
+        <p class="source">Alunni, A. and Bally-Cuif, L. A comparative view of regenerative<br/>neurogenesis in vertebrates. Development, 143(5):741–753. (2016).</p>
+    </section>
+</section>
+<section data-background-video="video/quadpus.mp4" data-background-video-loop=true>
+    <h3>Questions?</h3>
+</section>
+      </div>
+    </div>
+		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
+		 Reveal.initialize({
+         slideNumber: 'c',
+         transition: 'none',
+         controls: false,
+         autoPlayMedia: true,
+	       math: {
+		         mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		         config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+		         // pass other options into `MathJax.Hub.Config()`
+	       },
 				dependencies: [
+ 					{ src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
