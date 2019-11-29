@@ -1,0 +1,120 @@
+<section>
+    <section data-background-video="video/simulation.mp4" data-background-video-loop=true>
+        <h3 style="color:#fff;">Evolving Learning Methods
+        <div class="video-source">&copy; DigiCortex</div></h3>
+    </section>
+    <section>
+        <h6>Stochastic Gradient Descent</h6>
+        <img data-src="video/sgd.gif" width="90%" height="auto">
+        <br />
+        SGD(<span style="color: #FF7F00">$\eta$</span>, <span style="color:
+        #6A3D9A">$\alpha$</span>)
+    </section>
+    <section>
+        <h6>Adaptive Moment Estimation (Adam)</h6>
+        <img data-src="video/adam.gif" width="90%" height="auto">
+        <br />
+        Adam(<span style="color: #FF7F00">$\eta$</span>, <span style="color:
+        #6A3D9A">$\beta_1$</span>, <span style="color: #6A3D9A">$\beta_2$</span>,
+        <span style="color: #33A02C">$\epsilon$</span>)
+    </section>
+    <section>
+        <h6>Learning Parameters</h6>
+        <table>
+            <tr>
+                <td>Inputs</td>
+                <td>Output (SGD) &nbsp; &nbsp;</td>
+                <td>Output (Adam)</td>
+            </tr>
+            <tr>
+                <td>$\mu_{\theta}$</td>
+                <td>$\eta$</td>
+                <td>$\eta$</td>
+            </tr>
+            <tr>
+                <td>$\sigma_{\theta}$</td>
+                <td>$\alpha$</td>
+                <td>$\beta_1$</td>
+            </tr>
+            <tr>
+                <td>$\mu_{\nabla Q}$</td>
+                <td></td>
+                <td>$\beta_2$</td>
+            </tr>
+            <tr>
+                <td>$\sigma_{\nabla Q}$</td>
+                <td></td>
+                <td>$\epsilon$</td>
+            </tr>
+            <tr>
+                <td>layer location</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>layer size</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
+    <section>
+        <h6>Neuromodulation</h6>
+        <img data-src="img/neuromod/neuromod_scheme.png" width="80%" height="auto">
+        <p class="source">
+            Wilson, Dennis G., et al. "Neuromodulated Learning in Deep Neural Networks."<br/>arXiv preprint arXiv:1812.03365 (2018).
+        </p>
+    </section>
+    <section>
+        <h6>Neural Network Models</h6>
+        <img data-src="img/background/vgg16.png" width="50%" height="auto">
+        <p class="source">
+            Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional
+            networks for large-scale image recognition." ICLR (2015).
+        </p>
+        <small>
+        <table style="width: 200px;">
+            <tr>
+                <td>m0</td>
+                <td>small</td>
+            </tr>
+            <tr>
+                <td>m1</td>
+                <td>medium</td>
+            </tr>
+            <tr>
+                <td>m2</td>
+                <td>large</td>
+            </tr>
+        </table>
+        </small>
+    </section>
+    <section>
+        <h6>Image classification: CIFAR-10</h6>
+        <img data-src="img/neuromod/cifar10_train-page1.png" width="80%" height="auto">
+        <br />
+        <p class="fragment">
+        <img data-src="img/neuromod/cifar10_test-page1.png" width="80%" height="auto">
+        </p>
+    </section>
+    <section>
+        <h6>Image classification: CIFAR-100</h6>
+        <img data-src="img/neuromod/cifar100_train-page1.png" width="80%" height="auto">
+        <br />
+        <p class="fragment">
+        <img data-src="img/neuromod/cifar100_test-page1.png" width="80%" height="auto">
+        </p>
+    </section>
+    <section>
+        <h6>AGRN Outputs</h6>
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_lr-page1.png" width="40%" height="auto">
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_beta1-page1.png" width="40%" height="auto">
+        <br />
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_beta2-page1.png" width="40%" height="auto">
+        <img data-src="img/neuromod/outputs_Nm-Adam_m1_epsilon-page1.png" width="40%" height="auto">
+    </section>
+    <section>
+        Evolution finds local and dynamic neuromodulation strategies which
+        improve on existing learning methods.
+    </section>
+</section>
