@@ -27,3 +27,9 @@
     padding: 0.0em;
     border-bottom: 0;
 }
+
+.reveal .left table td{
+    text-align: left;
+    padding: 0.0em;
+    border-bottom: 0;
+}
